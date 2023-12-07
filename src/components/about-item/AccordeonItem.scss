@@ -1,0 +1,46 @@
+@import "../../style/settings.scss";
+.accordeon-container {
+  max-width: 1023px;
+  width: 100%;
+
+  .wrapper-description {
+    background-color: $backgroundItemColor;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.25s ease-in-out;
+    font-size: 1.125rem;
+  }
+
+  .appear {
+    max-height: 500px;
+  }
+}
+
+.wrapper-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $fontColor;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+button {
+  background-color: transparent;
+  border: 0;
+  width: 32px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.arrow-down {
+  transition: 0.25s ease-in-out;
+  rotate: 180deg;
+}
+
+.arrow-up {
+  transition: 0.25s ease-in-out;
+}

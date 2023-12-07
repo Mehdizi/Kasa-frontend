@@ -1,0 +1,24 @@
+.not-found-wrapper {
+  margin: 94px 0 139px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 139px;
+  align-items: center;
+}
+
+.title-not-found {
+  color: #ff6060;
+  font-size: 18rem;
+  font-weight: 700;
+}
+
+.text-not-found {
+  color: #ff6060;
+  font-size: 2rem;
+}
+
+.link-not-found {
+  color: #ff6060;
+  font-size: 1.125rem;
+  text-decoration: underline;
+}
