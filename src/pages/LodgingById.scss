@@ -1,0 +1,76 @@
+@import ".././style/settings.scss";
+
+.lodging-main-wrapper {
+  width: 1240px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .lodging-main-img {
+    width: 1240px;
+    height: 415px;
+    border-radius: 25px;
+    object-fit: cover;
+    margin-bottom: 25px;
+  }
+}
+
+.lodging-presentation-section {
+  width: 100%;
+  margin-bottom: 20px;
+  .lodging-section-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.125rem;
+    }
+    img {
+      border-radius: 50%;
+      width: 64px;
+      height: 64px;
+      object-fit: cover;
+    }
+    .title-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .host-wrapper {
+      width: 13%;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}
+
+.lodging-description-section {
+  display: flex;
+  width: 100%;
+  .lodging-tags-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .lodging-tags-list {
+      display: flex;
+      gap: 20px;
+      .lodging-tag-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.875rem;
+        color: white;
+        width: 115px;
+        height: 25px;
+        background-color: $fontColor;
+        padding: 0 10px;
+        border-radius: 10px;
+      }
+    }
+  }
+}

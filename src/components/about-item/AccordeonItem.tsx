@@ -8,7 +8,6 @@ export const AccordeonItem = ({ title, contentComponent }: { title: string, cont
 
   const toggleAccordeon = () => {
     setIsArrowDeployed(prevState => !prevState)
-    console.log(isArrowDeployed)
   }
 
 

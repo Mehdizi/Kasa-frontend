@@ -1,10 +1,9 @@
 import React from 'react'
 
-export const LodgingDescription = ({ equipments, description }: { equipments: string[], description: string }) => {
+export const LodgingDescription = ({ equipments }: { equipments: string[] }) => {
   return (
-
     <ul>
-      {equipments.map((e, index) => <li key={index}></li>)}
+      {equipments.map((e, index) => <li key={index}> {e} </li>)}
     </ul>
   )
 }

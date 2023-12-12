@@ -40,7 +40,6 @@
   justify-content: space-between;
   align-items: center;
   gap: 50px;
-  background-color: grey;
   overflow: hidden;
 }
 
@@ -52,10 +51,14 @@
     border-radius: 10px;
     background-color: red;
     object-fit: cover;
+    filter: contrast(70%);
   }
   h2 {
     position: absolute;
-    bottom: 5%;
+    bottom: 0;
     left: 2%;
+    font-size: 1.125rem;
+    color: #ffffff;
+    height: 52px;
   }
 }

@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { Home } from "./pages/Home"
 import { About } from "./pages/About"
 import { NotFound } from "./pages/notfound/NotFound"
-import { Lodging } from "./pages/Lodging"
+import { LodgingById } from "./pages/LodgingById"
 import { Layout } from "./components/layout/Layout"
 
 
@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/lodging/:id" element={<Lodging />} />
+          <Route path="/lodging/:id" element={<LodgingById />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>

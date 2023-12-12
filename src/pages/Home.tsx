@@ -5,6 +5,7 @@ import "./Home.scss"
 import LodgingDatas from "../models/lodging-data.json"
 
 export const Home = () => {
+
     return (
         <>
             <div className='home-page-title-wrapper'>
@@ -15,22 +16,18 @@ export const Home = () => {
                 <ul className='lodging-cards-wrapper'>
                     {LodgingDatas.map((data) => {
                         return (
-                            <Link to={`lodging/:{data.id}`}>
-                                <li key={data.id} className='lodging-card'>
+
+                            <li key={data.id} className='lodging-card'>
+                                <Link to={`lodging/:${data.id}`} state={data}>
                                     <img className='lodging-cover' src={data.cover} alt="" />
                                     <h2>{data.title}</h2>
-                                </li>
-                            </Link>
+                                </Link>
+                            </li>
 
                         )
                     })}
                 </ul>
-
             </main>
         </>
-
-
-
-
     )
 }
