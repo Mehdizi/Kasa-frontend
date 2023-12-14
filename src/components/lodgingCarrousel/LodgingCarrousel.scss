@@ -1,0 +1,45 @@
+.lodging-carrousel-wrapper {
+  position: relative;
+  max-width: 1240px;
+}
+
+.lodging-carrousel-img {
+  width: 1240px;
+  height: 415px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.carrousel-button {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.previous-button {
+  left: 0;
+  bottom: 38%;
+  .arrow-left {
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.next-button {
+  right: 0;
+  bottom: 38%;
+  .arrow-right {
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.current-img {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  color: white;
+}

@@ -2,8 +2,11 @@ import React from 'react'
 import { Navigate, useLocation } from 'react-router-dom'
 import { Lodging } from '../types/Lodging'
 import "./LodgingById.scss"
-import { AccordeonItem } from '../components/about-item/AccordeonItem'
+import { AccordeonItem } from '../components/accordeonItem/AccordeonItem'
 import { LodgingRating } from '../components/lodging/lodging-rating/LodgingRating'
+import { EquipmentsList } from '../components/equipmentList/EquipmentsList'
+import { LodgingDescription } from '../components/lodgingDescription/LodgingDescription'
+import { LodgingCarrousel } from '../components/lodgingCarrousel/LodgingCarrousel'
 
 
 export const LodgingById = () => {
@@ -18,7 +21,8 @@ export const LodgingById = () => {
 
     return (
         <main className='lodging-main-wrapper'>
-            <img className='lodging-main-img' src={pictures[0]} alt={title} />
+            {/* <img className='lodging-main-img' src={pictures[0]} alt={title} /> */}
+            <LodgingCarrousel pictures={pictures} />
             <section className='lodging-presentation-section'>
                 <div className='lodging-section-div'>
                     <div className='title-wrapper'>
@@ -46,9 +50,9 @@ export const LodgingById = () => {
                         <LodgingRating rating={rating} />
                     </div>
                 </div>
-                <div>
-                    <AccordeonItem title="Description" contentComponent="" />
-                    <AccordeonItem title="Équipements" contentComponent="" />
+                <div className='accordeon-list'>
+                    <AccordeonItem title="Description" contentComponent={<LodgingDescription description={description} />} />
+                    <AccordeonItem title="Équipements" contentComponent={<EquipmentsList equipments={equipments} />} />
                 </div>
 
             </section>

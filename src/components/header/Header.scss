@@ -1,24 +1,17 @@
 .header {
-  max-width: 1440px;
-  width: 95%;
-img {
-  width: 210px;
-  height: 68px;
-}
-
-ul {
-  font-size: 1.5rem;
-  display: flex;
-  gap: 50px;
-}
-}
-
-.img-navbar-wrapper {
-  max-width: 1440px;
+  max-width: 1240px;
   margin: 45px 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  img {
+    width: 210px;
+    height: 68px;
+  }
 }
 
-
+// @media screen and (max-width: 1240px) {
+//   .header {
+//     max-width: 1024px;
+//   }
+// }

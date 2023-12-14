@@ -1,0 +1,11 @@
+.header-navlist {
+  ul {
+    font-size: 1.5rem;
+    display: flex;
+    gap: 50px;
+  }
+}
+
+.active {
+  text-decoration: underline;
+}

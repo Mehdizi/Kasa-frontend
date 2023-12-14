@@ -7,8 +7,8 @@ import "./Layout.scss"
 export const Layout = ({ children }: PropsWithChildren) => {
     return (
         <div className='layout'>
+            <Header />
             <div className='layout-children' >
-                <Header />
                 {children}
             </div>
             <Footer />
