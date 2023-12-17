@@ -1,4 +1,4 @@
-@import "../../src/style/settings.scss";
+@import "../../../src/style/settings.scss";
 
 .main-about {
   display: flex;
@@ -15,4 +15,12 @@
   max-width: 1023px;
   padding: 20px 20px;
   border-radius: 0 0 5px 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-about {
+    ul {
+      margin: 0 20px;
+    }
+  }
 }

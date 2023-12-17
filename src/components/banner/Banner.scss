@@ -23,11 +23,36 @@
   }
 }
 
-@media screen and (max-width: 1048px) {
+@media screen and (max-width: 1240px) {
   .header {
     max-width: 1044px;
+  }
+  .home-page-title-wrapper {
     h1 {
       font-size: 2.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .home-page-title-wrapper {
+    h1 {
+      font-size: 1.5rem;
+    }
+    img {
+      margin: 0 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-page-title-wrapper {
+    h1 {
+      font-size: 1.5rem;
+      width: 220px;
+    }
+    img {
+      height: 111px;
     }
   }
 }

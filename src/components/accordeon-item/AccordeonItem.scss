@@ -45,3 +45,16 @@
 .arrow-up {
   transition: 0.25s ease-in-out;
 }
+
+@media screen and (max-width: 768px) {
+  .wrapper-title {
+    h2 {
+      font-size: 0.8125rem;
+    }
+  }
+  .accordeon-container {
+    .wrapper-description {
+      font-size: 0.75rem;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 1.5rem;
+  gap: 30px;
+  height: 210px;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-footer {
+  width: 122px;
+  height: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    gap: 20px;
+    p {
+      font-size: 1.125rem;
+      width: 150px;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer {
+    gap: 10px;
+    p {
+      font-size: 0.75rem;
+      width: 130px;
+    }
+  }
+}

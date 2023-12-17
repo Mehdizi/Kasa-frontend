@@ -1,0 +1,70 @@
+.lodging-carrousel-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.lodging-carrousel-img {
+  max-width: 1240px;
+  width: 100%;
+  height: 415px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.carrousel-button {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.previous-button {
+  left: 0;
+  bottom: 38%;
+}
+
+.next-button {
+  right: 0;
+  bottom: 38%;
+}
+
+.arrow-left {
+  position: inherit;
+  left: 0;
+  top: 15%;
+}
+.arrow-right {
+  position: inherit;
+  right: 0;
+  top: 15%;
+}
+
+.current-img {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .lodging-carrousel-img {
+    height: 255px;
+  }
+  .arrow-left,
+  .arrow-right {
+    height: 24px;
+    width: 24px;
+    top: 34%;
+  }
+  .previous-button {
+    bottom: 25%;
+  }
+  .next-button {
+    bottom: 25%;
+  }
+  .current-img {
+    display: none;
+  }
+}

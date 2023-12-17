@@ -10,8 +10,12 @@
   }
 }
 
-// @media screen and (max-width: 1240px) {
-//   .header {
-//     max-width: 1024px;
-//   }
-// }
+@media screen and (max-width: 768px) {
+  .header {
+    margin: 45px 20px;
+    img {
+      width: 145px;
+      height: 47px;
+    }
+  }
+}

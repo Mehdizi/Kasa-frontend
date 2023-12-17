@@ -1,0 +1,85 @@
+@import "../../style/settings.scss";
+
+.main-home-wrapper {
+  background-color: $backgroundItemColor;
+  margin: auto;
+  max-width: 1240px;
+  width: 100%;
+  margin-bottom: 50px;
+  border-radius: 25px;
+  height: 820px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lodging-cards-wrapper {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.lodging-card {
+  max-width: 340px;
+  max-height: 340px;
+  position: relative;
+  a {
+    width: 100%;
+    height: 100%;
+  }
+  .lodging-card-cover {
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    object-fit: cover;
+    filter: contrast(70%);
+  }
+  h2 {
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+    font-size: 1.125rem;
+    color: #ffffff;
+    height: 52px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .lodging-card {
+    .lodging-card-cover {
+      width: 300px;
+      height: 300px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main-home-wrapper {
+    height: auto;
+    padding: 30px 0;
+    .lodging-cards-wrapper {
+      display: grid;
+      grid-gap: 30px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-home-wrapper {
+    background-color: white;
+    padding: 0px;
+    .lodging-cards-wrapper {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      .lodging-card {
+        max-width: 335px;
+        max-height: 255px;
+        margin: 0 20px;
+        .lodging-card-cover {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
